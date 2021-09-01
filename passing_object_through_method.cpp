@@ -10,7 +10,7 @@ class complex
 
 public:
     void setData(int, int);
-    void sum(complex, complex); //function taking arguments of type class complex.
+    void sumcomplex(complex, complex); //function taking arguments of type class complex.
     void print(void);
 };
 
@@ -20,7 +20,7 @@ void complex ::setData(int v1, int v2)
     b = v2;
 }
 
-void complex ::sum(complex o1, complex o2)  //Adding 2 complex numbers.
+void complex ::sumcomplex(complex o1, complex o2)  //Adding 2 complex numbers.
 {
     a = o1.a + o2.a;
     b = o1.b + o2.b;
@@ -38,7 +38,7 @@ int main()
     c1.print();
     c2.setData(3, 5);
     c2.print();
-    c3.sum(c1, c2);
+    c3.sumcomplex(c1, c2);
     c3.print();
     return 0;
 }
