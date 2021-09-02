@@ -9,13 +9,13 @@ class complex
     int a, b;
     
     public:
-        complex(void);
+        complex(void);  //Declaring Constructor.
         void printNum(void);
 };
 
-complex :: complex()
+complex :: complex()    //Defining Constructor.
 {
-    a = 0;
+    a = 0;  //Initializing value of a & b as soon as an object created.
     b = 0;
 }
 
