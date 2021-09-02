@@ -13,6 +13,8 @@ class complex
         void printNum(void);
 };
 
+//This is default constructor.
+
 complex :: complex()    //Defining Constructor.
 {
     a = 0;  //Initializing value of a & b as soon as an object created.
@@ -27,6 +29,6 @@ void complex :: printNum()
 int main()
 {
     complex c;
-    c.printNum();
+    c.printNum();   
     return 0;
 }
