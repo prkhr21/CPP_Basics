@@ -39,8 +39,8 @@ float distance(coordinate p, coordinate q)
 
 int main()
 {
-    coordinate x(2, 2);
-    coordinate y(2, 2);
+    coordinate x(0, 0);
+    coordinate y(0, 2);
     x.display();
     y.display();
     float dis = distance(x, y);
