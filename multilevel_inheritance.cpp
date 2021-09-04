@@ -1,4 +1,6 @@
-//This program is to understan multilevel inheritance
+//This program is to understand multilevel inheritance.
+//class A => class B => class C
+//A derives B & B derives C.
 
 #include<iostream>
 #include<string>
@@ -6,68 +8,95 @@ using namespace std;
 
 class student
 {
-    int roll_number;
-    string name;
-
+    protected:
+        int rollnumber;
+        string name;
     public:
         student(void);
-        void setData(void);
-        void getData(void);
+        void setdata();
+        void getdata();
 };
 
 student ::student()
 {
-    //Default constructor of class student.
-    cout<<"Default constructor of class student invoked."<<endl;
+    cout<<"Default constructor of class student invoked"<<endl;
 }
 
-void student ::setData()
+void student ::setdata()
 {
-    cout<<"Enter roll number & name of student - "<<endl;
-    cin>>roll_number>>name;
+    cout<<"Enter roll number & name of student"<<endl;
+    cin>>rollnumber>>name;
 }
 
-void student ::getData()
+void student ::getdata()
 {
-    cout<<"roll number & name of student - "<<roll_number<<" & "<<name<<endl;
+    cout<<"Roll number = "<<rollnumber<<endl;
+    cout<<"Name = "<<name<<endl; 
 }
 
-class exam : public student
+class exam : protected student
 {
-    float marks_math, marks_physics, marks_chemistry;
-
+    protected:
+        int math, phy, chem;
     public:
-        exam(void);
-        void setMarks(void);
-        void getMarks(void);
+        exam();
+        void setmarks();
+        void getmarks();
 };
 
 exam ::exam()
 {
-    //Default constructor of class exam.
-    cout<<"Default constructor of class exam invoked."<<endl;
+    cout<<"Default constructor of class exam invoked"<<endl;
 }
 
-void exam ::setMarks()
+void exam ::setmarks()
 {
-    cout<<"Enter marks of maths, physics & chemistry - "<<endl;
-    cin>>marks_math>>marks_physics>>marks_chemistry;
+    cout<<"Enter marks of Math, Physics, Chemistry - "<<endl;
+    cin>>math>>phy>>chem;
 }
 
-void exam ::getMarks()
+void exam ::getmarks()
 {
-    cout<<"Marks obtained in math - "<<marks_math<<endl;
-    cout<<"Marks obtained in physics - "<<marks_physics<<endl;
-    cout<<"Marks obtained in chemistry - "<<marks_chemistry<<endl;
+    cout<<"Marks obtained in math - "<<math<<endl;
+    cout<<"Marks obtained in physics - "<<phy<<endl;
+    cout<<"Marks obtained in chemistry - "<<chem<<endl;
 }
 
-class result : public exam
+class result : protected exam
 {
-    
+    protected:
+        float percentage = 0;
+    public:
+        result();
+        void create();
+        void display();
 };
+
+result ::result()
+{
+    cout<<"Default constructor of class result invoked"<<endl;
+}
+
+void result ::create()
+{
+    setdata();
+    setmarks();
+}
+
+void result ::display()
+{
+    percentage = (math + phy + chem)/3;
+    getdata();
+    getmarks();
+    cout<<"Percentage = "<<percentage<<endl;
+}
 
 int main()
 {
-    
+    result s1,s2;
+    s1.create();
+    s1.display();
+    s2.create();
+    s2.display();
     return 0;
 }

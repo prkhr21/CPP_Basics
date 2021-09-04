@@ -1,0 +1,7 @@
+                            Public derivation   Protected derivation    Private derivation
+1. Public members -             Public              Protected               Private      
+2. Protected members -          Protected           Protected               Private
+3. Private members -            Not inherited       Not inherited           Not inherited 
+
+----------------------------------------------------------------------------------------------
+
