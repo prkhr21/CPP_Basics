@@ -88,7 +88,7 @@ void result ::display()
     percentage = (math + phy + chem)/3;
     getdata();
     getmarks();
-    cout<<"Percentage = "<<percentage<<endl;
+    cout<<"Percentage = "<<percentage<<"%"<<endl;
 }
 
 int main()
