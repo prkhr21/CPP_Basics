@@ -5,3 +5,4 @@
 
 ----------------------------------------------------------------------------------------------
 
+"this" is a keyword which is a pointer which points to the object which invokes the member function.
