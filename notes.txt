@@ -6,3 +6,19 @@
 ----------------------------------------------------------------------------------------------
 
 "this" is a keyword which is a pointer which points to the object which invokes the member function.
+
+----------------------------------------------------------------------------------------------
+
+Virtual function - 
+
+1. They can not be static.
+2. They are accessed by object pointers.
+3. Virtual function can be friend of another class.
+4. A virtual function in base class might not be used.
+5. If a virtual function is defined in base class then there is no necessity of redefining it 
+   in derived class.
+
+----------------------------------------------------------------------------------------------
+
+Abstract base class - It is class which is used to derive other classes, this class can not be 
+                      used to create objects.
