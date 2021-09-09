@@ -64,3 +64,18 @@ Syntax -    template<class T1, class T2...(Comma seprated)>
             }
 
             In main function call you will write respective data types in place of T1, T2...
+
+Template with default parameter - if data type is not specified then it will take 
+                                  default datatype.
+
+syntax -    template<class T1 = datatype1, class T2 = datatype2...>
+            class name_of_class
+            {
+               class body;
+            };
+
+            int main()
+            {
+               name_of_class< > obj_name;
+               return 0;
+            }
