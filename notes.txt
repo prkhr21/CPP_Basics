@@ -22,3 +22,21 @@ Virtual function -
 
 Abstract base class - It is class which is used to derive other classes, this class can not be 
                       used to create objects.
+
+----------------------------------------------------------------------------------------------
+
+File input / output - 
+
+The useful class for working withfiles in c++ are : 
+
+1. fstreambase
+2. ofstream ----> derived from fstreambase
+3. instream ----> derived from fstreambase
+
+In order to work with files in c++, you will have to open it. Primarily, there are 2 ways to 
+open a file - 
+
+1. using the constructor.
+2. using the member function open() of the class.
+
+getline() - it is used to read one complete line from a file. consecutive use give s next line.
