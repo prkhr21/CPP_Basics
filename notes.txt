@@ -1,3 +1,6 @@
+
+DRY principle - DO not REPEAT YOURSELF. 
+
                             Public derivation   Protected derivation    Private derivation
 1. Public members -             Public              Protected               Private      
 2. Protected members -          Protected           Protected               Private
@@ -40,3 +43,11 @@ open a file -
 2. using the member function open() of the class.
 
 getline() - it is used to read one complete line from a file. consecutive use give s next line.
+
+---------------------------------------------------------------------------------------------
+
+Templates - It is a blueprint or formula for creating a generic class or function.
+            To simply put you can create a single function or single class to work with 
+            different data types.
+
+Templates & STL are must for competetive programming.
