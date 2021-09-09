@@ -51,3 +51,16 @@ Templates - It is a blueprint or formula for creating a generic class or functio
             different data types.
 
 Templates & STL are must for competetive programming.
+
+Syntax -    template<class T1, class T2...(Comma seprated)>
+            class name_of_class
+            {
+               //Body of class.
+            };
+
+            int main()
+            {
+               name_of_class<T1, T2...> obj_name;
+            }
+
+            In main function call you will write respective data types in place of T1, T2...
