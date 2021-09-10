@@ -79,3 +79,25 @@ syntax -    template<class T1 = datatype1, class T2 = datatype2...>
                name_of_class< > obj_name;
                return 0;
             }
+
+STL - STL stands for "Standard Template Library". It is library of well tested generic classes
+      & functions.
+
+Components of STL - 1. Containers - Stores data ex - Vector, List etc. It uses Template classes.
+                                    It is of 3 types - 
+                                    
+                                    a. Sequence containers - Linear faishon
+                                                             ex - vector, list, dequeue.
+
+                                    b. Associative containers - Direct access
+                                                                ex - set, multiset, map, multimap.
+
+                                    c. Derived containers - Real world modeling
+                                                            ex - stack, queue, priority queue.
+                    
+                    2. Algorithms - Algo for Sorting, Searching. It uses Template function.
+                    
+                    3. Iterators - It is an object which points to an element in a container.
+                                   Handled just like pointers. It connects Algo with Containers.
+
+STL is used because its good idea not to "reinvent the wheel".
