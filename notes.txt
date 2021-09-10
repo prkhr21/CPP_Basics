@@ -85,7 +85,7 @@ STL - STL stands for "Standard Template Library". It is library of well tested g
 
 Components of STL - 1. Containers - Stores data ex - Vector, List etc. It uses Template classes.
                                     It is of 3 types - 
-                                    
+
                                     a. Sequence containers - Linear faishon
                                                              ex - vector, list, dequeue.
 
@@ -101,3 +101,6 @@ Components of STL - 1. Containers - Stores data ex - Vector, List etc. It uses T
                                    Handled just like pointers. It connects Algo with Containers.
 
 STL is used because its good idea not to "reinvent the wheel".
+
+function objects also known as functors - function wrapped in a class so that it is available like
+an object. 
